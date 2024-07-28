@@ -3,37 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header Designs</title>
+    <title>Headers</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <a href="../../index.html" class="go-back-link"> <- Home </a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="header-1">
+
+    <div class="static-header">
         <h1>Static Header 1</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        <a href="../../index.html">Home</a>
+    </div>
 
-    <header class="header-2">
-        <h1>Static Header 2</h1>
-        <img src="./assets/img/chelseaFC.png" alt="Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- Static Headers -->
+    <h3>Design 1</h3>
+    <p>Simple header with call to actions button w/o logo </p>
+    <section class="design-one">
+        <ul>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </section>
 
-    <header class="header-3">
+    <h3>Design 2</h3>
+    <p>Simple header with a navbar call to action button with a centered logo</p>
+    <section class="design-two">
+        <div class="logo-two">
+            <img src="assets/img/garenhead.jpg" alt="Logo">
+        </div>
+    <nav class="navbar-two">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>    
+    </section>
+    
+    <h3>Design 3</h3>
+    <p>Simple logo with centered text and call to action buttons</p>
+    <section class="design-three">
         <h1>Static Header 3</h1>
         <nav>
             <ul>
@@ -43,97 +55,124 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </section>
 
-    <header class="header-4">
-        <div class="container">
-            <h1>Static Header 4</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+    <h3>Design 4</h3>
+    <p>Header bar consisting of four icon buttons</p>
+    <section class="design-four">
+        <nav class="navbar-four">
+            <div class="navbar__menu_container-four">
+              <a href=""><i class="fa-solid fa-house-chimney"></i></a>
+              <a href=""><i class="fa-solid fa-circle-info"></i></a>
+              <a href=""><i class="fa-solid fa-phone"></i></a>
+              <a href=""><i class="fa-solid fa-book-open"></i></a>
+            </div>
+          </nav>
+    </section>
+
+    <h3>Design 5</h3>
+    <p>Header bar consisting of four icon buttons with a logo</p>
+    <section class="design-five">
+        <div class="logo-five">
+           <img src="assets/img/dteemo.png" alt="Logo">
         </div>
-    </header>
-
-    <header class="header-5">
-        <h1>Static Header 5</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+        <nav class="navbar-five">
+            <ul class="menu-five">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
             </ul>
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">Go</button>
+                </form>
+            </div>
         </nav>
-    </header>
+    </section>
 
-    <header class="header-animated-1">
-        <h1>Animated Header 1</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<!--Animated Headers-->
+<div class="header-page">
+    <h1>Animated Header Designs</h1>
+</div>
 
-    <header class="header-animated-2">
-        <h1>Animated Header 2</h1>
-        <div class="logo">
-            <img src="./assets/img/manU.png" alt="Logo">
+<h3>Design 1</h3>
+<p>Simple header with call to actions button w/o logo </p>
+<section class="design-1">
+    <ul>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</section>
+
+<h3>Design 2</h3>
+<p>Simple header with a navbar call to action button with a centered logo</p>
+<section class="design-2">
+    <div class="logo-2">
+        <img src="assets/img/garenhead.jpg" alt="Logo">
+    </div>
+<nav class="navbar-2">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>    
+</section>
+
+<h3>Design 3</h3>
+<p>Simple logo with centered text and call to action buttons</p>
+<section class="design-3">
+    <h1>Static Header 3</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</section>
+
+<h3>Design 4</h3>
+<p>Header bar consisting of four icon buttons</p>
+<section class="design-4">
+    <nav class="navbar-4">
+        <div class="navbar__menu_container-4">
+          <a href=""><i class="fa-solid fa-house-chimney"></i></a>
+          <a href=""><i class="fa-solid fa-circle-info"></i></a>
+          <a href=""><i class="fa-solid fa-phone"></i></a>
+          <a href=""><i class="fa-solid fa-book-open"></i></a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+      </nav>
+</section>
 
-    <header class="header-animated-3">
-        <h1>Animated Header 3</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <header class="header-animated-4">
-        <div class="container">
-            <h1>Animated Header 4</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+<h3>Design 5</h3>
+<p>Header bar consisting of four icon buttons with a logo</p>
+<section class="design-5">
+    <div class="logo-5">
+       <img src="assets/img/dteemo.png" alt="Logo">
+    </div>
+    <nav class="navbar-5">
+        <ul class="menu-5">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact</a></li>
+        </ul>
+        <div class="search">
+            <form>
+                <input type="text" placeholder="Search...">
+                <button type="submit">Go</button>
+            </form>
         </div>
-    </header>
+    </nav>
+</section>
 
-    <header class="header-animated-5">
-        <h1>Animated Header 5</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 </body>
 </html>

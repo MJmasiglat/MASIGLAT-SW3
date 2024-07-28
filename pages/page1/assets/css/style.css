@@ -1,298 +1,410 @@
-.go-back-link {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px 10px;
-    border-radius: 4px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.header-1 {
-    background-color: #333;
-    color: white;
+.static-header {
     padding: 20px;
     text-align: center;
 }
 
-.header-1 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.header-1 nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.header-1 nav ul li a {
-    color: white;
+.static-header a {
+    color: #9c9696;
     text-decoration: none;
-}
-
-.header-2 {
-    background-color: #555;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-}
-
-.header-2 .logo {
-    width: 100px; 
-    height: auto; 
-}
-
-.header-2 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.header-2 nav ul li {
     margin: 0 10px;
 }
 
-.header-2 nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.header-3 {
-    background: linear-gradient(to right, #4CAF50, #81C784);
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.header-3 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.header-3 nav ul li {
-    margin: 0 15px;
-}
-
-.header-3 nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.header-4 {
-    background-color: #009688;
-    color: white;
+.design-one, .design-two, .design-three, .design-four {
     padding: 20px 0;
-}
-
-.header-4 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.header-4 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.header-4 nav ul li {
-    margin: 0 10px;
-}
-
-.header-4 nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.header-5 {
-    background-color: #673AB7;
-    color: white;
     text-align: center;
-    padding: 40px;
-    position: relative;
-    overflow: hidden; /* Ensures child elements respect the bounds */
+    background-color: #fff; 
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.header-5:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
-    background-size: 50px 50px;
-    z-index: -1;
+/* Design 1 Styles */
+.design-one {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 0 3px #000000;
 }
 
-.header-5 nav ul {
-    list-style-type: none;
-    margin: 20px 0 0;
+.design-one ul {
+    list-style: none;
     padding: 0;
+}
+
+.design-one li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.design-one li:first-child {
+    margin-left: 0;
+}
+
+.design-one li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+/*Design 2 Styles */
+.design-two {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000000; 
+    color: #80c8f8;
 }
 
-.header-5 nav ul li {
-    margin: 0 25px;
+.logo-two{
+    margin-bottom: 20px;
 }
 
-.header-5 nav ul li a {
-    color: white;
+.logo-two img {
+    width: 150px; 
+    height: auto;
+}
+
+.navbar-two ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-two li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar-two li:last-child {
+    margin-right: 0;
+}
+
+.navbar-two a {
+    color: #ffffff; 
     text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    position: relative;
-    display: inline-block;
 }
 
-.header-animated-1 {
-    background-color: #333;
+/* Design 3 Styles */
+
+.design-three {
+    background: #81C784;
     color: white;
-    padding: 20px;
     text-align: center;
-    animation: backgroundChange 10s infinite;
+    padding: 20px;
 }
 
-@keyframes backgroundChange {
-    0% { background-color: #333; }
-    50% { background-color: #666; }
-    100% { background-color: #333; }
-}
-
-.header-animated-1 nav ul {
+.design-three nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-.header-animated-1 nav ul li {
-    display: inline;
+.design-three nav ul li {
     margin: 0 15px;
 }
 
-.header-animated-1 nav ul li a {
+.design-three nav ul li a {
     color: white;
     text-decoration: none;
 }
 
-.header-animated-2 {
-    background-color: #555;
-    color: white;
+/* Design 4 Styles */
+
+.design-four {
+    width: 100%;
+    background-color: #979797;
+    z-index: 20;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+.navbar-four {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px 40px;
+    height: 80px;
+  }
+  
+.navbar-four a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 750;
+    padding: 12px 40px;
+  }
+  
+.navbar__menu_container-four {
+    display: flex;
+    gap: 15x;
+  }
+
+/* Design 5 Styles */
+.design-five {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    height: 60px;
-    position: relative;
+    background-color: #001A6C;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    color: #ffffff;
     overflow: hidden;
 }
 
-.header-animated-2 h1 {
-    font-size: 24px;
-    margin: 0;
-    animation: fadeInDown 5s ease-out;
+.logo-five img {
+    width: 80px;
 }
 
-.header-animated-2 .logo {
-    width: 50px;
-    height: 30px;
-    animation: logoBounce 3s infinite;
-}
-
-.header-animated-2 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.navbar-five {
     display: flex;
-    animation: slideInRight 4s ease-out;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center; /* Center the menu items */
 }
 
-.header-animated-2 nav ul li {
-    margin: 0 10px;
-    animation: fadeIn 14s ease-out;
+.menu-five {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Increase the gap for better spacing */
 }
 
-.header-animated-2 nav ul li a {
-    color: white;
+.menu-five li {
+    position: relative;
+}
+
+.menu-five li a {
     text-decoration: none;
-    transition: transform 0.5s ease-out;
+    color: #ffffff;
+    font-size: 1.2em;
 }
 
-.header-animated-2 nav ul li a:hover {
-    transform: translateY(-3px); 
+.menu-five li a:hover {
+    color: #cebf6f;
 }
 
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.menu-five li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #cebf6f;
+    top: 100%;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
 }
 
-@keyframes logoBounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
+.menu-five li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: 40px; /* Add margin to separate the search form */
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.search input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
 }
 
-.header-animated-3 {
-    background: linear-gradient(to right, #4CAF50, #81C784);
+.search button {
+    padding: 10px;
+    border: none;
+    background-color: #cebf6f;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.search button:hover {
+    background-color: #b5a552;
+}
+
+/*Animated header styles */
+.animated-header {
+    transition: transform 0.3s ease-out;
+}
+
+.animated-header:hover {
+    transform: translateY(-5px); 
+}
+
+
+.header-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.design-1, .design-2, .design-3, .design-4 {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #fff; 
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Design 1 Styles */
+
+.design-1 {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 0 3px #000000;
+}
+
+.design-1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.design-1 li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.design-1 li:first-child {
+    margin-left: 0;
+}
+
+.design-1 li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.design-1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.design-1 li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.design-1 li:first-child {
+    margin-left: 0;
+}
+
+.design-1 li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.design-1 li a:hover {
+    background-color: #eee;
+}
+
+/*Design 2 Styles*/
+.design-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000000; 
+    color: #80c8f8;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth animation */
+}
+
+.design-2:hover {
+    background-color: #333333; /* Change background color on hover */
+    color: #ffffff; /* Change text color on hover */
+}
+
+.logo-2 {
+    margin-bottom: 20px;
+    transition: transform 0.3s; /* Add transition for smooth animation */
+}
+
+.logo-2:hover {
+    transform: scale(1.1); /* Scale up the logo on hover */
+}
+
+.logo-2 img {
+    width: 150px; 
+    height: auto;
+}
+
+.navbar-2 ul {
+    list-style: none;
+}.design-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000000; 
+    color: #80c8f8;
+}
+
+.logo-2{
+    margin-bottom: 20px;
+}
+
+.logo-2 img {
+    width: 150px; 
+    height: auto;
+}
+
+.navbar-2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-2 li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar-2 li:last-child {
+    margin-right: 0;
+}
+
+.navbar-2 a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.animated-logo-2 img {
+    width: 150px;
+    height: auto;
+    transition: opacity 0.3s ease-in-out; 
+}
+
+.animated-logo-2 img:hover {
+    opacity: 0.7; 
+}
+
+/* Design 3 Styles */
+
+.design-3 {
+    background: #81C784;
     color: white;
     text-align: center;
     padding: 20px;
-    animation: textGlow 3s infinite;
 }
 
-@keyframes textGlow {
-    0%, 100% { text-shadow: 0 0 5px white; }
-    50% { text-shadow: 0 0 20px white; }
-}
-
-.header-animated-3 nav ul {
+.design-3 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -300,69 +412,17 @@
     justify-content: center;
 }
 
-.header-animated-3 nav ul li {
+.design-3 nav ul li {
     margin: 0 15px;
 }
 
-.header-animated-3 nav ul li a {
+.design-3 nav ul li a {
     color: white;
     text-decoration: none;
 }
 
-.header-animated-4 {
-    background-color: #009688;
-    color: white;
-    padding: 20px 0;
-    animation: slideIn 4s ease-out infinite; /* Added 'infinite' for continuous looping */
-}
-
-@keyframes slideIn {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    50% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.header-animated-4 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.header-animated-4 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.header-animated-4 nav ul li {
-    margin: 0 10px;
-}
-
-.header-animated-4 nav ul li a {
-    color: white;
-    text-decoration: none;
-    transition: transform 0.3s ease-out;
-}
-
-.header-animated-4 nav ul li a:hover {
-    transform: translateY(-5px); /* Lift up on hover */
-}
-
-.header-animated-5 {
-    background-color: #673AB7;
+.design-3 {
+    background-color: #81C784;
     color: white;
     text-align: center;
     padding: 20px;
@@ -378,7 +438,7 @@
     }
 }
 
-.header-animated-5 nav ul {
+.design-3 nav ul {
     list-style-type: none;
     margin: 20px 0 0;
     padding: 0;
@@ -386,17 +446,159 @@
     justify-content: center;
 }
 
-.header-animated-5 nav ul li {
+.design-3 nav ul li {
     margin: 0 15px;
     transform-origin: center bottom;
     transition: transform 0.3s ease-in-out;
 }
 
-.header-animated-5 nav ul li a {
+.design-3 nav ul li a {
     color: white;
     text-decoration: none;
 }
 
-.header-animated-5 nav ul li:hover {
+.design-3 nav ul li:hover {
     transform: translateY(-5px); /* Lift up on hover */
 }
+
+/* Design 4 Styles */
+
+.design-4 {
+    width: 100%;
+    background-color: #979797;
+    z-index: 20;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+.navbar-4 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px 40px;
+    height: 80px;
+  }
+  
+.navbar-4 a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 750;
+    padding: 12px 40px;
+  }
+  
+.navbar__menu_container-4 {
+    display: flex;
+    gap: 15x;
+  }
+
+.navbar__menu_container-4{
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+.navbar__menu_container-4:hover{
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Design 5 Styles */
+.design-5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001A6C;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    color: #ffffff;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.design-5:hover {
+    background-color: #002C9A;
+    transform: scale(1.02);
+}
+
+.logo-5 img {
+    width: 80px;
+    transition: transform 0.3s;
+}
+
+.design-5:hover .logo-5 img {
+    transform: rotate(360deg);
+}
+
+.navbar-5 {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center; /* Center the menu items */
+}
+
+.menu-5 {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Increase the gap for better spacing */
+}
+
+.menu-5 li {
+    position: relative;
+}
+
+.menu-5 li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-5 li a:hover {
+    color: #cebf6f;
+}
+
+.menu-5 li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #cebf6f;
+    top: 100%;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-5 li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: 40px; /* Add margin to separate the search form */
+}
+
+.search input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search button {
+    padding: 10px;
+    border: none;
+    background-color: #cebf6f;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.search button:hover {
+    background-color: #b5a552;
+}
+
+
+
