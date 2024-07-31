@@ -64,18 +64,21 @@ Description of the project in details.
 Guiding Question:
 
 - What is the project
+  This showcase the different types of headers and footers.
 - Whats the purpose
+  The purpose is to show my skill on the different headers and footers design
 - What are key components
+  Multipages
+  Call to action buttons
 - What technology used and how it is used
+  The technology used is CSS and HTML
 
 ### Key Components
 
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
 
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- MultiPage Website
 
 ### Technology
 
