@@ -120,6 +120,7 @@ WD-ProjectName
 ## Resources
 
 <!-- TODO: Add References -->
+
 | Title | Purpose | Link |
 |-|-|-|
 | leagueoflegendes | Content of Feuture | https://www.leagueoflegends.com/en-us/|
